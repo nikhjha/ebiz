@@ -25,4 +25,8 @@ export const getServerSideProps = async (context) => {
 	// 		categories: categories_res.data.data.categories,
 	// 	},
 	// };
+	return {
+		props: {
+		},
+	};
 };
