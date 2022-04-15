@@ -20,9 +20,9 @@ export const getServerSideProps = async (context) => {
 	const fetch = serverFetch();
 	const categories_res = await fetch.get("/categories/getAllCategories");
 	console.log(categories_res);
-	return {
-		props: {
-			categories: categories_res.data.data.categories,
-		},
-	};
+	// return {
+	// 	props: {
+	// 		categories: categories_res.data.data.categories,
+	// 	},
+	// };
 };
