@@ -17,16 +17,15 @@ export default function createProduct({ categories }) {
 }
 
 export const getServerSideProps = async (context) => {
-	// const fetch = serverFetch();
-	// const categories_res = await fetch.get("/categories/getAllCategories");
-	// console.log(categories_res);
-	// return {
-	// 	props: {
-	// 		categories: categories_res.data.data.categories,
-	// 	},
-	// };
+	console.log("a");
+	const fetch = serverFetch();
+	console.log("a");
+	const categories_res = await fetch.get("/categories/getAllCategories");
+	console.log("a");
+	console.log(categories_res);
 	return {
 		props: {
+			categories: categories_res.data.data.categories,
 		},
 	};
 };
