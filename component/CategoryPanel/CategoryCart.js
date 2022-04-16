@@ -66,7 +66,7 @@ const ProductCard = ({
             variant="contained"
             className={styles.category_cart_btn}
             onClick={() => {
-              router.push(`/product/${id}`);
+              router.push(`/item/${id}`);
             }}
           >
             See More
